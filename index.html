@@ -6,6 +6,18 @@
     <title>WebAssembly example</title>
     <script src="add.js"></script>
 
+  </head>
+  
+  <body>
+    <h1>WebAssembly in C</h1>
+    <div style="display: inline-block;">
+        <input id="a" type="number" />
+        <label>+</label>
+        <input id="b" type="number" />
+        <button id="run_button" onclick="run_ws()">=</button>
+        <label id="ret"></label>
+    </div>
+    
     <script>
         function run_ws() {
             var a = document.getElementById("a").value;
@@ -21,17 +33,6 @@
             r.innerText = ret
         }
     </script>
-  </head>
-  
-  <body>
-    <h1>WebAssembly in C</h1>
-    <div style="display: inline-block;">
-        <input id="a" type="number" />
-        <label>+</label>
-        <input id="b" type="number" />
-        <button id="run_button" onclick="run_ws()">=</button>
-        <label id="ret"></label>
-    </div>
   </body>
 </html>
 
